@@ -1,0 +1,35 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation {
+  &__link {
+    text-decoration: none;
+    color: $text-color-2;
+    font-weight: 600;
+    &:hover {
+      color: $text-color;
+      text-decoration: underline 3px;
+    }
+  }
+}
+.active {
+  color: $text-color;
+  text-decoration: underline 3px;
+}
+.tex-box{
+   
+   
+    &__heading{
+        width: 50%;
+        font-size: 40px;
+        color: $text-color;
+    }
+    &__pera{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 46%;
+        font-size: 18px;
+    }
+}
