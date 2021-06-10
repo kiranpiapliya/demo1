@@ -45,18 +45,19 @@
 .videobox {
   &__video {
     position: absolute;
-    width: 33%;
-    top: 49.5%;
-    left: 56%;
+    width: 34%;
+    top: 49.3%;
+    left: 60.5%;
+    border-radius: 50%;
+    border: 2px solid #FFFF;
     transform: translate(-50%, -50%);
   }
   &__play {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    left: 56%;
+    top: 49%;
+    left: 60.5%;
     width: 10%;
-
     transform: translate(-50%, -50%);
   }
 }
