@@ -6,7 +6,7 @@
   <!-- head - start
 ================================== -->
   <head>
-    <!-- mta -tags-start
+    <!-- meta -tags-start
 ================================== -->
     <meta charset="UTF-8" />
     <meta name="description" content="startup file" />
@@ -28,18 +28,22 @@
 ================================== -->
     <title>Education</title>
 
-    <!-- google font montserrat
+    <!-- google font Montserrat
 ================================== -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- custume style sheet
+    <!-- costume style sheet
 ================================== -->
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery 
+================================== -->
+<script src="js/jquery.min.js"></script>
   </head>
   <!-- head - end
 ================================== -->
@@ -50,43 +54,52 @@
     <!--section header start
 ================================== -->
     <header class="section-header">
+            <!--top-bar start
+================================== -->
+<div class="topbar container container-lg
+container-md
+container-sm
+container-xl">
+  <img src="img/Logo@2x.png" alt="Education logo" class="topbar-logo" />
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a href="#" class="navigation__link active">Study</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">About Us</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Admission</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Pages</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">News</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Contact</a>
+      </li>
+    </ul>
+   
+    <a href="#" class="btn btn-white">Apply now</a>
+    <img src="img/menu.svg" alt="menutoggle" class="menu-toggle" id="iconM">
+  </nav>
+</div>
+<!--top-bar end
+================================== -->
       <div class="test">
         <img src="img/Group350.png" alt="" class="herobaner" />
         <img src="img/Layer555.png" alt="" class="header__bottomcurve" />
       </div>
-      <!--topbar start
-================================== -->
-      <div class="topbar container">
-        <img src="img/Logo@2x.png" alt="Education logo" class="topbar-logo" />
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link active">Study</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About Us</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Admmission</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Pages</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">News</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contact</a>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-white">Apply now</a>
-        </nav>
-      </div>
-      <!--topbar end
-================================== -->
+
       <!--hero section text start
 ================================== -->
-      <div class="herobaner__textbox container">
+      <div class="herobaner__textbox container container-lg
+      container-md
+      container-sm
+      container-xl">
         <div class="tex-box">
           <h1 class="tex-box__heading">Innovation for education and society</h1>
           <p class="tex-box__pera">
@@ -102,11 +115,16 @@
     </header>
     <!--section header end
 ================================== -->
-    <!--our department sction start
+    <!--our department section start
 ================================== -->
-    <section class="department container">
+    <section class="department container container-lg
+    container-md
+    container-sm
+    container-xl">
       <div class="department__headertextbox">
-        <h2 class="department__headertextbox-heading heading1 ">Ourt Department</h2>
+        <h2 class="department__headertextbox-heading heading1">
+          Ours Department
+        </h2>
         <p class="department__headertextbox-text">
           A hundred thousand grateful loves to your dear papa and mamma. Is your
           poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men
@@ -114,19 +132,19 @@
         </p>
       </div>
       <div class="row modify">
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col col-sm col-md col-lg col-xl">
           <div class="cta cta__1">
             <img src="img/1card.png" alt="books photo" class="cta__image1" />
             <p class="cta__text">Online Education</p>
           </div>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col col-sm col-md col-lg col-xl">
           <div class="cta cta__2">
             <img src="img/2card.png" alt="books photo" class="cta__image2" />
             <p class="cta__text">Online Education</p>
           </div>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col col-sm col-md col-lg col-xl modify-3">
           <div class="cta cta__3">
             <img src="img/3card.png" alt="books photo" class="cta__image3" />
             <p class="cta__text">Online Education</p>
@@ -134,15 +152,13 @@
         </div>
       </div>
     </section>
-    <!--our department sction end
+    <!--our department section end
 ================================== -->
-<!--limitless section start
+    <!--limitless section start
 ================================== -->
     <section class="limitless">
-   
-
       <div class="row">
-        <div class="col-6">
+        <div class="col col-sm col-md col-lg col-xl">
           <div class="outershape">
             <img src="img/bgshape.png" alt="img" class="bgshape" />
             <div class="bgshape__flower">
@@ -166,117 +182,313 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col col-sm col-md col-lg col-xl">
           <div class="limitless__textbox">
-            <h1 class="limitless__textbox-heading heading1 ">
-              Limitless learning, more 
-possibilities
+            <h1 class="limitless__textbox-heading heading1">
+              Limitless learning, more possibilities
             </h1>
             <p class="limitless__textbox-text">
-              The University of Rochester is one of the country's top-tier research universities. Our campuses are home to 200 academic majors, more than 2,000 faculty and instructional staff, and some 10,000 students—approximately half of whom are women.
-
-
-
-
+              The University of Rochester is one of the country's top-tier
+              research universities. Our campuses are home to 200 academic
+              majors, more than 2,000 faculty and instructional staff, and some
+              10,000 students—approximately half of whom are women.
             </p>
-            <p class="limitless__textbox-text">Learning at the University of Rochester is also on a very personal scale. Rochester remains one of the smallest and most collegiate among top research universities, with smaller classes, a low 10:1 student to teacher ratio, and increased interactions with faculty.
-              
-              <div class="limitless__count">
-                <p class="limitless__count-student limitless__count-student-1 heading1">
-                  4000
-              
-                </p>
-                <span class="limitless__count-student__span limitless__count-student__span-1">Student</span>
-               
-              </div>
-              <div class="limitless__count">
-                <p class="limitless__count-student limitless__count-student-2 heading1">
-                  260
-              
-                </p>
-                <span class="limitless__count-student__span limitless__count-student__span-2">Courses</span>
-               
-              </div>
-              <div class="limitless__count">
-                <p class="limitless__count-student limitless__count-student-3 heading1">
-                  5679
-                </p>
-                <span class="limitless__count-student__span limitless__count-student__span-3">Hours Video</span>           
-              </div>
-                </p>
+            <p class="limitless__textbox-text">
+              Learning at the University of Rochester is also on a very personal
+              scale. Rochester remains one of the smallest and most collegiate
+              among top research universities, with smaller classes, a low 10:1
+              student to teacher ratio, and increased interactions with faculty.
+            </p>
+
+            <div class="limitless__count">
+              <p
+                class="
+                  limitless__count-student limitless__count-student-1
+                  heading1
+                "
+              >
+                4000
+              </p>
+              <span
+                class="
+                  limitless__count-student__span
+                  limitless__count-student__span-1
+                "
+                >Student</span
+              >
+            </div>
+            <div class="limitless__count">
+              <p
+                class="
+                  limitless__count-student limitless__count-student-2
+                  heading1
+                "
+              >
+                260
+              </p>
+              <span
+                class="
+                  limitless__count-student__span
+                  limitless__count-student__span-2
+                "
+                >Courses</span
+              >
+            </div>
+            <div class="limitless__count">
+              <p
+                class="
+                  limitless__count-student limitless__count-student-3
+                  heading1
+                "
+              >
+                5679
+              </p>
+              <span
+                class="
+                  limitless__count-student__span
+                  limitless__count-student__span-3
+                "
+                >Hours Video</span
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!--limitless section end
 ================================== -->
-  <!--Around university section start
+    <!--Around university section start
 ================================== -->
-<section class="around ">
-<div class="roundshape">
-  <img src="img/Bg.png" alt="img" class="roundshape__img">
-</div>
-<div class="around__detail container"> 
-  <h1 class="heading1">
-  Around the University 
-</h1>
-<div class="row modify">
-  <div class="col-sm-3">
-    <div class="page">
-      <img src="img/Img.png" alt="" class="page__photo">
-      <div class="page__texbox">
-        <a href="#" class="page__texbox-link navigation__link">Photoshop CC 218 Essential Training: The Basics</a>
-      <p class="page__texbox-roll">
-        Graphics Design
-      </p>
-      <a href="#" class="page__texbox-keepreading">
-        Keep reading...
-      </a> 
+    <section class="around">
+      <!--round shape start
+================================== -->
+      <div class="roundshape">
+        <img src="img/Bg.png" alt="img" class="roundshape__img" />
       </div>
-    </div>
-  </div>
-  <div class="col-sm-3"> <div class="page">
-    <img src="img/Img.png" alt="" class="page__photo">
-    <div class="page__texbox">
-      <a href="#" class="page__texbox-link navigation__link">Photoshop CC 218 Essential Training: The Basics</a>
-    <p class="page__texbox-roll">
-      Graphics Design
-    </p>
-    <a href="#" class="page__texbox-keepreading">
-      Keep reading...
-    </a> 
-    </div>
-  </div></div>
-  <div class="col-sm-3"> <div class="page">
-    <img src="img/Img.png" alt="" class="page__photo">
-    <div class="page__texbox">
-      <a href="#" class="page__texbox-link navigation__link">Photoshop CC 218 Essential Training: The Basics</a>
-    <p class="page__texbox-roll">
-      Graphics Design
-    </p>
-    <a href="#" class="page__texbox-keepreading">
-      Keep reading...
-    </a> 
-    </div>
-  </div></div>
-  <div class="col-sm-3"> <div class="page">
-    <img src="img/Img.png" alt="" class="page__photo">
-    <div class="page__texbox">
-      <a href="#" class="page__texbox-link navigation__link">Photoshop CC 218 Essential Training: The Basics</a>
-    <p class="page__texbox-roll">
-      Graphics Design
-    </p>
-    <a href="#" class="page__texbox-keepreading">
-      Keep reading...
-    </a> 
-    </div>
-  </div></div>
-</div>
-</div>
-
-</section>
-<!--Around university section start
+      <!--round shape end
 ================================== -->
+
+      <div class="around__detail container container-lg
+      container-md
+      container-sm
+      container-xl">
+        <h1 class="heading1">Around the University</h1>
+        <!--card first row start
+================================== -->
+        <div class="row modify">
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link"
+                  >Photoshop CC 218 Essential Training: The Basics</a
+                >
+                <p class="page__texbox-roll">Graphics Design</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img2.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link">
+                  Get Started Coding Android Apps With Kotlin</a
+                >
+                <p class="page__texbox-roll">Global System</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img3.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link"
+                  >Create Turntable Animations With Cinema 4D</a
+                >
+                <p class="page__texbox-roll">
+                  Computer & Information Technology
+                </p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img4.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link"
+                  >A Beginner’s Guide to the New Bootstrap 4 Grid</a
+                >
+                <p class="page__texbox-roll">Web Development</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card first row end
+================================== -->
+        <!--card second row start
+================================== -->
+        <div class="row modify-2">
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img5.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link"
+                  >PA Designer’s Guide to Vue.js Components</a
+                >
+                <p class="page__texbox-roll">Art Department</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img6.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link">
+                  Code a Swift App With Realm Mobile Database</a
+                >
+                <p class="page__texbox-roll">Music</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img7.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link"
+                  >10 Essential Design Tips in Adobe Illustrator</a
+                >
+                <p class="page__texbox-roll">Technology Information</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="page">
+              <img src="img/Img8.png" alt="" class="page__photo" />
+              <div class="page__texbox">
+                <a href="#" class="page__texbox-link navigation__link"
+                  >Modern PHP From The Beginning</a
+                >
+                <p class="page__texbox-roll">Data Science</p>
+                <a href="#" class="page__texbox-keepreading">
+                  Keep reading...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card second row  end
+================================== -->
+      </div>
+    </section>
+    <!--Around university section end
+================================== -->
+    <!--Footer section start
+================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="footer__box">
+              <img
+                src="img/footerlogo.png"
+                alt="logo"
+                class="footer__box-logo"
+              />
+              <p class="footer__box-text">
+                Edmodo focuses on creating magnificent education websites with
+                ease. Take the lead in the race with Learned.
+              </p>
+              <div class="footer__box-shape">
+                <div class="footer__box-shape__squire"></div>
+                <div class="footer__box-shape__squire"></div>
+                <div class="footer__box-shape__squire highlight"></div>
+                <div class="footer__box-shape__squire"></div>
+                <div class="footer__box-shape__squire"></div>
+                <div class="footer__box-shape__squire"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="programs">
+              <p class="programs__text">Feature programs</p>
+              <ul class="programs__list">
+                <li class="programs__list-item">
+                  Fixed responsive issue<span> - Just Now</span>
+                </li>
+                <li class="programs__list-item">
+                  New portfolio grid layout<span> - Today</span>
+                </li>
+                <li class="programs__list-item">
+                  Tested & approved WP 3.6<span> - 5 Hours ago</span>
+                </li>
+                <li class="programs__list-item">
+                  Fixed google map issue<span> - Yesterday</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="programs">
+              <p class="programs__text">learning</p>
+              <ul class="programs__list">
+                <li class="programs__list-item">Our Plans</li>
+                <li class="programs__list-item">Free Trial</li>
+                <li class="programs__list-item">Academic Solutions</li>
+                <li class="programs__list-item">Business Solutions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-sm col-md col-lg col-xl">
+            <div class="programs">
+              <p class="programs__text">support forum</p>
+              <p class="footer__box-text">
+                Write your email into below field and join our quick support
+                forum.
+              </p>
+            <div class="email-box">  
+              <input
+                type="email"
+                placeholder="Email address"
+                class="footer__box-email"
+              />
+              <a href="#" class="footer__box-botton">Get help</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer section end
+================================== -->
+<script>
+$(document).ready(function (){
+
+$('#iconM').click(function(){
+$('.navigation__list').toggleClass('MenuShow');
+});
+});
+</script>
   </body>
   <!-- body - end
 ================================== -->

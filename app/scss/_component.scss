@@ -2,10 +2,15 @@
   width: 78px;
   height: 79px;
   z-index: 100;
+  margin-right: auto;
+  @media only screen and (max-width: 768px) {
+    & {
+      width: 68px;
+      height: 69px;
+    }
+  }
 }
 .test {
-  margin-top: 50px;
-
   position: absolute;
 }
 .herobaner {
@@ -29,6 +34,7 @@
     border-radius: 200px;
     font-weight: 600;
   }
+
   &-white {
     padding: 10px 15px;
     background-color: $bg-color-2;
@@ -41,15 +47,62 @@
     color: $text-color-3;
     box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
   }
+  @media only screen and (min-width: 1980px) {
+    & {
+      &:link,
+      &:visited,
+      &:active {
+        padding: 15px 30px;
+        font-size: 22px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    & {
+      &:link,
+      &:visited,
+      &:active {
+        font-size: 15px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    & {
+      &:link,
+      &:visited,
+      &:active {
+        font-size: 14px;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    & {
+      &-2 {
+        padding: 10px 15px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    & {
+      &:link,
+      &:visited,
+      &:active {
+        padding: 8px 15px;
+        font-size: 12px;
+      }
+    }
+  }
 }
+
 .videobox {
   &__video {
     position: absolute;
-    width: 34%;
+    width: 48%;
     top: 49.3%;
-    left: 60.5%;
+    left: 60%;
+
     border-radius: 50%;
-    border: 2px solid #FFFF;
+    border: 2px solid #ffff;
     transform: translate(-50%, -50%);
   }
   &__play {
@@ -60,4 +113,55 @@
     width: 10%;
     transform: translate(-50%, -50%);
   }
+}
+.footer {
+  &__box {
+    &-logo {
+      width: 70%;
+    }
+    &-email {
+      padding: 10px 15px;
+      outline: none;
+      border: none;
+      width: 100%;
+      @media only screen and (min-width: 1980px) {
+        & {
+          padding: 14px 15px;
+        }
+        &::placeholder {
+          font-size: 17px;
+        }
+      }
+    }
+
+    &-botton {
+      &:link,
+      &:active,
+      &:visited {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-decoration: none;
+        color: $text-color-3;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px;
+
+        overflow: hidden;
+        background-color: $bg-color-3;
+      }
+      @media only screen and (min-width: 1980px) {
+        &:link,
+        &:active,
+        &:visited {
+          padding: 12px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.email-box {
+  margin-top: 50px;
+  position: relative;
 }

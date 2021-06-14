@@ -14,6 +14,31 @@ html {
 body {
   overflow-x: hidden;
   box-sizing: border-box;
+  @media only screen and (min-width: 1980px) {
+    & {
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    & {
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    & {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    & {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    & {
+      font-size: 12px;
+    }
+  }
 }
 
 /////////////////////
@@ -26,9 +51,8 @@ body {
   background-color: $bg-color;
   padding: 10px 0;
 }
-
 .container {
-  width: 150%;
+  width: 100%;
   margin: auto;
 }
 .topbar {
@@ -36,17 +60,64 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.menu-toggle {
+  width:25px;
+  display: none;
+  margin-left: 20px;
+  opacity: 0.4;
+
+  @media only screen and (max-width: 768px) {
+    & {
+      display: block;
+    }
+  }
+}
 .navigation {
   display: flex;
   align-items: center;
   &__list {
     display: flex;
+    display: none;
     list-style: none;
   }
   &__item {
     padding: 0 12px;
   }
+  @media only screen and (max-width: 2000px) {
+    & {
+      &__list {
+        display: flex;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    & {
+      &__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: -101%;
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.5s;
+        background-color: $bg-color;
+
+        align-items: center;
+
+        list-style: none;
+      }
+      &__item {
+        padding: 0 12px;
+        margin-top: 30px;
+      }
+    }
+    .MenuShow {
+      left: 0;
+    }
+  }
 }
+
 .tex-box {
   position: absolute;
   margin-top: 8%;
@@ -63,6 +134,17 @@ body {
 }
 .modify {
   margin-top: 50px;
+  @media only screen and (max-width: 768px) {
+    &{
+      margin-top: 30px;
+    }
+    .modify-3{
+      margin-top: 25px;
+    }
+  }
+}
+.modify-2 {
+  margin-top: 25px;
 }
 .cta {
   padding: 40px;
@@ -85,12 +167,29 @@ body {
   &__image3 {
     width: 100%;
     margin-left: 20px;
+    @media only screen and (max-width: 768px) {
+      margin-left: 22px;
+    }
   }
   &__text {
     text-align: center;
     font-weight: 700;
     font-size: 30px;
     color: $text-color-3;
+  }
+  @media only screen and (max-width: 1200px) {
+    & {
+      &__text {
+        font-size: 22px;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    & {
+      &__text {
+        font-size: 14px;
+      }
+    }
   }
 }
 .limitless {
@@ -103,76 +202,278 @@ body {
   }
 }
 .bgshape {
-  width: 100%;
+  width: 144%;
   margin-top: -18%;
-  margin-left: -30%;
+  margin-left: -72%;
   position: relative;
 
   &__flower {
-   
-    transform: translate(0, -173%);
+    transform: translate(0, -190%);
     text-align: center;
-   
+
     &-img {
-      width: 50%;
+      width: 70%;
       height: 40%;
-      margin-left: 9%;
+      margin-left: 3%;
     }
   }
 }
 
-.roundshape{
+.roundshape {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 10;
-&__img{
-  width: 50%;
-margin-right: -90%;
-
-
+  &__img {
+    width: 80%;
+    margin-right: -128%;
+    @media only screen and (min-width: 1980px) {
+      & {
+        width: 90%;
+        margin-right: -100%;
+      }
+    }
+  }
 }
-}
-.around{
-position: relative;
-z-index: 100;
-width: 100vw;
+
+.around {
+  position: relative;
+  z-index: 100;
+  width: 100vw;
   text-align: center;
-  margin-top: -200px;
+  margin-top: -37%;
 
-  &__detail{
+  &__detail {
     position: relative;
     z-index: 100;
   }
+  @media only screen and (max-width: 1400px) {
+    & {
+      margin-top: -40%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    & {
+      margin-top: -36%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    & {
+      margin-top: -35%;
+    }
+  }
+  @media only screen and (max-width: 844px) {
+    & {
+      margin-top: -25%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    & {
+      margin-top: -23%;
+    }
+  }
+ 
+  @media only screen and (max-width: 698px) {
+    & {
+      margin-top: -15%;
+    }
+  }
+  @media only screen and (max-width: 645px) {
+    & {
+      margin-top: 1%;
+    }
+  }
 }
-.page{
+.page {
   width: 100%;
   text-align: left;
   backface-visibility: hidden;
-box-shadow: 0 0 2px rgba(0,0,0,.3);
-border-radius: 5px;
-background-color: $bg-color-2;
-  &__photo{
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: $bg-color-2;
+  &__photo {
     width: 100%;
   }
-  &__texbox{
+  &__texbox {
     padding: 20px 15px;
-  &-roll{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    color: $text-color-2;
+    &-roll {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      color: $text-color-2;
+      font-size: 12px;
+    }
+    &-link {
+      font-size: 15px;
+    }
+    &-keepreading {
+      &:link,
+      &:visited,
+      &:active {
+        text-decoration: none;
+        font-weight: 500;
+        color: $text-color-2;
+      }
+    }
+  }
+  @media only screen and (min-width: 1980px) {
+    & {
+      &__texbox {
+        &-roll {
+          font-size: 14px;
+        }
+        &-link {
+          font-size: 18px !important;
+        }
+        &-keepreading {
+          &:link,
+          &:visited,
+          &:active {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    & {
+      &__texbox {
+        &-roll {
+          font-size: 12px;
+        }
+        &-link {
+          font-size: 15px !important;
+        }
+        &-keepreading {
+          &:link,
+          &:visited,
+          &:active {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    & {
+      &__texbox {
+        &-roll {
+          font-size: 10px;
+        }
+        &-link {
+          font-size: 12.5px !important;
+        }
+        &-keepreading {
+          &:link,
+          &:visited,
+          &:active {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    & {
+      &__texbox {
+        &-roll {
+          font-size: 8px;
+        }
+        &-link {
+          font-size: 10px !important;
+        }
+        &-keepreading {
+          &:link,
+          &:visited,
+          &:active {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    & {
+      &__texbox {
+        &-roll {
+          font-size: 10px;
+        }
+        &-link {
+          font-size: 14px !important;
+        }
+        &-keepreading {
+          &:link,
+          &:visited,
+          &:active {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer section
+.footer {
+  position: relative;
+  padding: 80px 0;
+  margin-top: 100px;
+  background-color: $text-color-4;
+  z-index: 100;
+
+  &__box {
+    width: 100%;
+
+    &-shape {
+      display: flex;
+      margin-top: 50px;
+      cursor: pointer;
+      &__squire {
+        width: 10px;
+        height: 15px;
+        border: 2px solid $boder-color;
+        margin-right: 20px;
+
+        &:hover {
+          border: 2px solid $boder-color-2;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+   &{
+     margin-top: 40px;
+   }
+  }
+}
+.highlight {
+  border: 2px solid $boder-color-2;
+}
+.programs {
+  width: 100%;
+}
+
+@media only screen and (max-width: 778px) {
+  .col {
+    &:not(:last-of-type) {
+      padding-right: 0;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col {
+    padding-right: calc(var(--bs-gutter-x) / 2) !important;
+    flex: 1 0 auto;
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .modify-2{
+    margin-top: 0;
+  }
+  .col {
+  margin-bottom: 25px;
   
+ 
   }
-  &-keepreading{
-    &:link,
-    &:visited,
-    &:active{
-    text-decoration: none;
-    font-weight: 500;
-    color: $text-color-2;
-  }
-  }
-  }
-  
 }
