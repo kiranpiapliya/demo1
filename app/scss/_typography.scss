@@ -29,7 +29,6 @@ body {
     & {
       &__link {
         font-size: 15px;
-       
       }
     }
   }
@@ -37,7 +36,6 @@ body {
     & {
       &__link {
         font-size: 14px;
-       
       }
     }
   }
@@ -110,7 +108,6 @@ body {
       }
       &__pera {
         font-size: 14px;
-       
       }
     }
   }
@@ -126,7 +123,51 @@ body {
         width: 50%;
         margin-top: 7px;
         margin-bottom: 18px;
-       
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    & {
+      margin-top: 13%;
+      &__heading {
+        font-size: 18px;
+        width: 54%;
+      }
+      &__pera {
+        font-size: 10px;
+        width: 50%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    & {
+      margin-top: 13%;
+      &__heading {
+        font-size: 15px;
+        width: 55%;
+      }
+      &__pera {
+        font-size: 8px;
+        width: 52%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    & {
+      margin-top: 10%;
+      &__heading {
+        font-size: 12px;
+        width: 52%;
+      }
+      &__pera {
+        font-size: 7px;
+        width: 51%;
+        margin-top: 3px;
+        margin-bottom: 12px;
       }
     }
   }
@@ -153,6 +194,21 @@ body {
       font-size: 23px;
     }
   }
+  @media only screen and (max-width: 576px) {
+    & {
+      font-size: 17px;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    & {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    & {
+      font-size: 13px;
+    }
+  }
 }
 .department {
   &__headertextbox {
@@ -177,12 +233,13 @@ body {
     line-height: 1.5;
     font-weight: 500;
     width: 80%;
+    text-align: justify;
     &:not(:last-of-type) {
       margin-bottom: 20px;
     }
   }
   @media only screen and (max-width: 768px) {
-    &{
+    & {
       margin-top: 50px;
       &-heading {
         margin-bottom: 15px;
@@ -190,6 +247,83 @@ body {
       &-text {
         &:not(:last-of-type) {
           margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    & {
+      margin-top: 8px;
+      &-heading {
+        width: 82%;
+        margin-bottom: 10px;
+      }
+      &-text {
+        width: 90%;
+        text-align: justify;
+        &:not(:last-of-type) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    & {
+      margin-top: 8px;
+      &-heading {
+        width: 82%;
+        margin-bottom: 10px;
+      }
+      &-text {
+        width: 90%;
+        text-align: justify;
+        &:not(:last-of-type) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    & {
+      margin: 0 auto;
+      padding: 0 20px;
+
+      position: relative;
+
+      margin-top: -300px;
+      &-heading {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-weight: 600;
+        width: 100%;
+        text-align: justify;
+        &:not(:last-of-type) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    & {
+      margin: 0 auto;
+      padding: 0 20px;
+
+      position: relative;
+
+      margin-top: -300px;
+      &-heading {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-weight: 600;
+        width: 100%;
+        text-align: justify;
+        &:not(:last-of-type) {
+          margin-bottom: 8px;
         }
       }
     }
@@ -228,7 +362,6 @@ body {
     & {
       margin-top: 20px;
     }
-
   }
   @media only screen and (max-width: 992px) {
     & {
@@ -238,7 +371,6 @@ body {
         margin-bottom: 5px;
         &__span {
           font-size: 15px;
-       
         }
       }
     }
@@ -251,6 +383,18 @@ body {
         margin-bottom: 3px;
         &__span {
           font-size: 13px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    & {
+      margin-top: 10px;
+      margin-right: 10px;
+      & &-student {
+        margin-bottom: 3px;
+        &__span {
+          font-size: 10px;
         }
       }
     }
@@ -273,7 +417,7 @@ body {
     }
   }
 
-  @media only screen and (max-width:1400px) {
+  @media only screen and (max-width: 1400px) {
     & {
       font-size: 16px;
     }
@@ -281,6 +425,16 @@ body {
   @media only screen and (max-width: 1200px) {
     & {
       font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    & {
+      font-size: 11px;
+      &__box {
+        &-text {
+          margin-top: 20px;
+        }
+      }
     }
   }
 }
@@ -311,7 +465,6 @@ body {
       &__list {
         &-item {
           font-size: 18px;
-         
         }
       }
     }
@@ -324,7 +477,19 @@ body {
       &__list {
         &-item {
           font-size: 13px;
-         
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    & {
+      &__text {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      &__list {
+        &-item {
+          font-size: 12px;
         }
       }
     }
