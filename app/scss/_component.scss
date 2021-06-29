@@ -46,12 +46,31 @@
     background-color: $bg-color-2;
     color: $text-color;
     box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+    &:hover{
+
+      transform: translate(0,-5px);
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    }
+    &:focus{
+
+      transform: translate(0,-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
   }
   &-2 {
     padding: 15px 30px;
     background-color: $bg-color-3;
     color: $text-color-3;
     box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+    
+      &:hover{
+
+      background-color:$bg-color-3-1 ;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+      }
+    
   }
   @media only screen and (min-width: 1980px) {
     & {
@@ -108,6 +127,7 @@
       }
     }   
   }
+ 
 }
 
 .videobox {
@@ -121,14 +141,7 @@
     border: 2px solid #ffff;
     transform: translate(-50%, -50%);
   }
-  &__play {
-    cursor: pointer;
-    position: absolute;
-    top: 49%;
-    left: 60.5%;
-    width: 10%;
-    transform: translate(-50%, -50%);
-  }
+ 
 }
 .footer {
   &__box {
@@ -161,33 +174,30 @@
     }
 
     &-botton {
-      &:link,
-      &:active,
-      &:visited {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        text-decoration: none;
-        color: $text-color-3;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 10px;
-
-        overflow: hidden;
-        background-color: $bg-color-3;
-      }
+      right: 0;
+      height: 100%;
+      bottom: 0;
+      text-decoration: none;
+      color: $text-color-3;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 10px;
+      position: absolute;
+      overflow: hidden;
+      background-color: $bg-color-3;
+      border: none;
+      cursor: pointer;
+     &:hover{
+       background-color: $bg-color-3-1;
+     }
       @media only screen and (min-width: 1980px) {
-        &:link,
-        &:active,
-        &:visited {
+        & {
           padding: 12px;
           font-size: 15px;
         }
       }
       @media only screen and (max-width: 576px) {
-        &:link,
-        &:active,
-        &:visited {
+        & {
          font-size: 11px;
 
         }
