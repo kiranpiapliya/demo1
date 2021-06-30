@@ -1,8 +1,11 @@
+////////////////////
+///preset
 html,
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+////////////////////
+///navigation
 .navigation {
   z-index: 100;
   &__link {
@@ -50,7 +53,8 @@ body {
     }
   }
 }
-
+////////////////////
+///heoro text baner
 .tex-box {
   margin-top: 10%;
   &__heading {
@@ -210,6 +214,8 @@ body {
     }
   }
 }
+////////////////////
+///deparyment section
 .department {
   &__headertextbox {
     &-heading {
@@ -222,6 +228,8 @@ body {
     }
   }
 }
+////////////////////
+///limitless section
 .limitless__textbox {
   margin-top: 60px;
   &-heading {
@@ -400,6 +408,8 @@ body {
     }
   }
 }
+////////////////////
+///footer serction
 .footer {
   font-weight: 500;
   color: $text-color-8;

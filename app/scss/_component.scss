@@ -19,6 +19,8 @@
 .test {
   position: absolute;
 }
+////////////////////
+///hero section
 .herobaner {
   display: block;
   width: 100%;
@@ -31,6 +33,8 @@
   width: 100vw;
   margin-top: -5px;
 }
+////////////////////
+///btn
 .btn {
   &:link,
   &:visited,
@@ -129,7 +133,8 @@
   }
  
 }
-
+////////////////////
+///video section
 .videobox {
   &__video {
     position: absolute;
@@ -143,12 +148,15 @@
   }
  
 }
+////////////////////
+///Footer section
 .footer {
   &__box {
     &-logo {
       width: 70%;
     }
     &-email {
+     
       padding: 10px 15px;
       outline: none;
       border: none;
